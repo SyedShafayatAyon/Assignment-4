@@ -46,7 +46,7 @@
     <main id="jobDescription" class=" border-t-2  border-t-[#E6E7E9] pt-8 container mx-auto">
         <div class="flex justify-between mb-6">
             <h3 class="font-semibold text-xl text-[#002c5c]">Available Jobs</h3>
-            <p class="text-[16px] text-[#64748B] font-medium"><span id="sectionJob">0</span> jobs</p>
+            <p class="text-[16px] text-[#64748B] font-medium"><span id="sectionJobCount">0</span> jobs</p>
         </div>
         <div class="flex gap-2 m-4">
             <button onclick="activeBtnAndShowOnly('allSection','allBtn')" id="allBtn"
@@ -57,14 +57,15 @@
                 class="btn text-[#64748B] text-xs font-medium">Rejected</button>
         </div>
         <section id="allSection" class="space-y-6 hidden">
-            <div class="card flex justify-between bg-[#FFFFFF] p-6">
+            <div class="cardContainer flex justify-between bg-[#FFFFFF] p-6">
                 <div>
                     <h3 class="text-[#002C5C] text-[18px] font-semibold">Mobile First Corp</h3>
                     <p class="text-[16px] text-[#64748B]">React Native Developer</p>
                     <br>
                     <p class="text-[16px] text-[#64748B]">Remote•Full-time•$130,000 - $175,000</p>
                     <br>
-                    <button class="stastus text-[#002C5C] text-[14px] bg-[#EEF4FF] mb-2">Not Applied</button>
+                    <button class=" text-[#002C5C] text-[14px] font-medium bg-[#EEF4FF] mb-2 py-2 px-3  state">Not
+                        Applied</button>
                     <p class="text-[14px] text-[#323B49] mb-5">Build cross-platform mobile applications using React
                         Native.
                         Work on products used by millions of
@@ -81,14 +82,15 @@
                             alt=""></button>
                 </div>
             </div>
-            <div class="card flex justify-between bg-[#FFFFFF] p-6">
+            <div class="cardContainer flex justify-between bg-[#FFFFFF] p-6">
                 <div class="">
                     <h3 class="text-[#002C5C] text-[18px] font-semibold">WebFlow Agency</h3>
                     <p class="text-[16px] text-[#64748B]">Web Designer & Developer</p>
                     <br>
                     <p class="text-[16px] text-[#64748B]">Los Angeles, CA • Part-time •$80,000 - $120,000</p>
                     <br>
-                    <button class="btn text-[#002C5C] text-[14px] bg-[#EEF4FF] mb-2">Not Applied</button>
+                    <button class=" text-[#002C5C] text-[14px] font-medium bg-[#EEF4FF] mb-2 py-2 px-3  state">Not
+                        Applied</button>
                     <p class="text-[14px] text-[#323B49] mb-5">Create stunning web experiences for high-profile clients.
                         Must have portfolio and experience with modern web design trends.</p>
                     <button
@@ -104,14 +106,15 @@
                 </div>
 
             </div>
-            <div class="card flex justify-between bg-[#FFFFFF] p-6">
+            <div class="cardContainer flex justify-between bg-[#FFFFFF] p-6">
                 <div class="">
                     <h3 class="text-[#002C5C] text-[18px] font-semibold">DataViz Solutions</h3>
                     <p class="text-[16px] text-[#64748B]">Data Visualization Specialist</p>
                     <br>
                     <p class="text-[16px] text-[#64748B]">Boston, MA •Full-time•$125,000 - $165,000</p>
                     <br>
-                    <button class="btn text-[#002C5C] text-[14px] bg-[#EEF4FF] mb-2">Not Applied</button>
+                    <button class=" text-[#002C5C] text-[14px] font-medium bg-[#EEF4FF] mb-2 py-2 px-3  state">Not
+                        Applied</button>
                     <p class="text-[14px] text-[#323B49] mb-5">Transform complex data into compelling visualizations.
                         Required skills: D3.js, React, and strong analytical thinking.</p>
                     <button
@@ -127,14 +130,15 @@
                 </div>
 
             </div>
-            <div class="card flex justify-between bg-[#FFFFFF] p-6">
+            <div class="cardContainer flex justify-between bg-[#FFFFFF] p-6">
                 <div class="">
                     <h3 class="text-[#002C5C] text-[18px] font-semibold">CloudFirst Inc</h3>
                     <p class="text-[16px] text-[#64748B]">Backend Developer</p>
                     <br>
                     <p class="text-[16px] text-[#64748B]">Seattle, WA • Full-time • $140,000 - $190,000</p>
                     <br>
-                    <button class="btn text-[#002C5C] text-[14px] bg-[#EEF4FF] mb-2">Not Applied</button>
+                    <button class=" text-[#002C5C] text-[14px] font-medium bg-[#EEF4FF] mb-2 py-2 px-3  state">Not
+                        Applied</button>
                     <p class="text-[14px] text-[#323B49] mb-5">Design and maintain scalable backend systems using Python
                         and AWS. Work with modern DevOps practices and cloud infrastructure.</p>
                     <button
@@ -150,14 +154,15 @@
                 </div>
 
             </div>
-            <div class="card flex justify-between bg-[#FFFFFF] p-6">
+            <div class="cardContainer flex justify-between bg-[#FFFFFF] p-6">
                 <div class="">
                     <h3 class="text-[#002C5C] text-[18px] font-semibold">Innovation Labs</h3>
                     <p class="text-[16px] text-[#64748B]">UI/UX Engineer</p>
                     <br>
                     <p class="text-[16px] text-[#64748B]">Austin, TX • Full-time • $110,000 - $150,000</p>
                     <br>
-                    <button class="btn text-[#002C5C] text-[14px] bg-[#EEF4FF] mb-2">Not Applied</button>
+                    <button class=" text-[#002C5C] text-[14px] font-medium bg-[#EEF4FF] mb-2 py-2 px-3  state">Not
+                        Applied</button>
                     <p class="text-[14px] text-[#323B49] mb-5">Create beautiful and functional user interfaces for our
                         suite of products. Strong design skills and frontend development expertise required.</p>
                     <button
@@ -173,14 +178,15 @@
                 </div>
 
             </div>
-            <div class="card flex justify-between bg-[#FFFFFF] p-6">
+            <div class="cardContainer flex justify-between bg-[#FFFFFF] p-6">
                 <div class="">
                     <h3 class="text-[#002C5C] text-[18px] font-semibold">MegaCorp Solutions</h3>
                     <p class="text-[16px] text-[#64748B]">JavaScript Developer</p>
                     <br>
                     <p class="text-[16px] text-[#64748B]">New York, NY • Full-time • $130,000 - $170,00</p>
                     <br>
-                    <button class="btn text-[#002C5C] text-[14px] bg-[#EEF4FF] mb-2">Not Applied</button>
+                    <button class=" text-[#002C5C] text-[14px] font-medium bg-[#EEF4FF] mb-2 py-2 px-3  state">Not
+                        Applied</button>
                     <p class="text-[14px] text-[#323B49] mb-5">Build enterprise applications with JavaScript and modern
                         frameworks. We offer competitive compensation, health insurance, and professional development
                         opportunities.</p>
@@ -197,14 +203,15 @@
                 </div>
 
             </div>
-            <div class="card flex justify-between bg-[#FFFFFF] p-6">
+            <div class="cardContainer flex justify-between bg-[#FFFFFF] p-6">
                 <div class="">
                     <h3 class="text-[#002C5C] text-[18px] font-semibold">StartupXYZ</h3>
                     <p class="text-[16px] text-[#64748B]">Full Stack Engineer</p>
                     <br>
                     <p class="text-[16px] text-[#64748B]">Remote • Full-time • $120,000 - $160,000</p>
                     <br>
-                    <button class="btn text-[#002C5C] text-[14px] bg-[#EEF4FF] mb-2">Not Applied</button>
+                    <button class=" text-[#002C5C] text-[14px] font-medium bg-[#EEF4FF] mb-2 py-2 px-3  state">Not
+                        Applied</button>
                     <p class="text-[14px] text-[#323B49] mb-5">Join our fast-growing startup and work on our core
                         platform. Experience with Node.js and React required. Great benefits and equity package
                         included.</p>
@@ -221,14 +228,15 @@
                 </div>
 
             </div>
-            <div class="card flex justify-between bg-[#FFFFFF] p-6">
+            <div class="cardContainer flex justify-between bg-[#FFFFFF] p-6">
                 <div class="">
                     <h3 class="text-[#002C5C] text-[18px] font-semibold">TechCorp Industries</h3>
                     <p class="text-[16px] text-[#64748B]">Senior Frontend Developer</p>
                     <br>
                     <p class="text-[16px] text-[#64748B]">San Francisco, CA • Full-time • $130,000 - $175,000</p>
                     <br>
-                    <button class="btn text-[#002C5C] text-[14px] bg-[#EEF4FF] mb-2">Not Applied</button>
+                    <button class=" text-[#002C5C] text-[14px] font-medium bg-[#EEF4FF] mb-2 py-2 px-3  state">Not
+                        Applied</button>
                     <p class="text-[14px] text-[#323B49] mb-5">We are looking for an experienced Frontend Developer to
                         build scalable web applications using React and TypeScript. You will work with a talented team
                         on cutting-edge projects.</p>
@@ -246,15 +254,15 @@
             </div>
         </section>
         <section id="interviewSection" class="space-y-6 hidden">
-            <!-- <img src="images/assignment_7959593 1.png" alt="" class="px-4 py-2">
-            <h3 class="text-2xl text-[#002C5C] font-semibold">No jobs available</h3>
-            <p class="text-[#64748B] text-[16px]">Check back soon for new job opportunities</p> -->
         </section>
 
         <section id="rejectedSection" class="space-y-6 hidden">
-            <!-- <img src="images/assignment_7959593 1.png" alt="" class="px-4 py-2">
+        </section>
+
+        <section id="emptySection" class="flex flex-col justify-center items-center space-y-5 bg-white hidden">
+            <img src="images/assignment_7959593 1.png" alt="" class="px-4 py-2">
             <h3 class="text-2xl text-[#002C5C] font-semibold">No jobs available</h3>
-            <p class="text-[#64748B] text-[16px]">Check back soon for new job opportunities</p> -->
+            <p class="text-[#64748B] text-[16px]">Check back soon for new job opportunities</p>
         </section>
     </main>
     <script src="js/commonFunctions.js"></script>

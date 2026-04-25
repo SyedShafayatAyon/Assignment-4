@@ -23,15 +23,33 @@ function activeBtn(id) {
 
   const selected = document.getElementById(id);
   selected.classList.add("activeBtn");
+
+  if (selected == allBtn) {
+    sectionJobCount.innerText = updateCount();
+    if (allSection.children.length < 1) {
+      emptySection.classList.remove("hidden");
+    } else {
+      emptySection.classList.add("hidden");
+    }
+  } else if (selected == interviewBtn) {
+    if (interviewSection.children.length < 1) {
+      emptySection.classList.remove("hidden");
+    } else {
+      emptySection.classList.add("hidden");
+    }
+  } else {
+    if (rejectedSection.children.length < 1) {
+      emptySection.classList.remove("hidden");
+    } else {
+      emptySection.classList.add("hidden");
+    }
+  }
 }
 
-function activeBtnAndShowOnly(id1, id2) {
-  showOnly(id1);
-  activeBtn(id2);
-}
+function activeBtnAndShowOnly(sectionId, btnId) {
+  showOnly(sectionId);
+  activeBtn(btnId);
 
-function del(id) {
-  const element = document.getElementsByClassName(id);
-  console.log(element.parentNode.parentNode);
-  // element.removeAttribute(id);
+  // const currentSection = document.getElementById(sectionId);
+  // updateEmptySection(currentSection);
 }
