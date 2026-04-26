@@ -14,6 +14,7 @@ document
   .addEventListener("click", function (event) {
     const clickedElement = event.target;
     const card = clickedElement.closest(".cardContainer");
+    if (!card) return;
     const parent = card.parentNode;
     const state = card.querySelector(".state");
 
