@@ -40,29 +40,34 @@ activeBtn("allBtn");
 showOnly("allSection");
 
 function updateCount() {
-  totalJob.innerText = allSection.children.length;
-  interviewCount.innerText = interviewSection.children.length;
-  rejectedCount.innerText = rejectedSection.children.length;
+  let allSectionLength = allSection.children.length;
+  let interviewSectionLength = interviewSection.children.length;
+  let rejectedSectionLength = rejectedSection.children.length;
+  totalJob.innerText = allSectionLength;
+  interviewCount.innerText = interviewSectionLength;
+  rejectedCount.innerText = rejectedSectionLength;
 
-  // const count = {
-  //   all: allSection.children.length,
-  //   interview: interviewSection.children.length,
-  //   rejected: rejectedSection.children.length,
-  // };
-  // totalJob.innerText = count.all;
-  // interviewCount.innerText = count[interview];
-  // rejectedCount.innerText = count[rejected];
+  if (allBtn.classList.contains("activeBtn")) {
+    sectionJobCount.innerText = allSectionLength;
+    if (allSectionLength < 1) {
+      emptySection.classList.remove("hidden");
+    } else {
+      emptySection.classList.add("hidden");
+    }
+  } else if (interviewBtn.classList.contains("activeBtn")) {
+    sectionJobCount.innerText = interviewSectionLength;
+    if (interviewSectionLength < 1) {
+      emptySection.classList.remove("hidden");
+    } else {
+      emptySection.classList.add("hidden");
+    }
+  } else if (rejectedBtn.classList.contains("activeBtn")) {
+    sectionJobCount.innerText = rejectedSectionLength;
+    if (rejectedSectionLength < 1) {
+      emptySection.classList.remove("hidden");
+    } else {
+      emptySection.classList.add("hidden");
+    }
+  }
 }
-
 updateCount();
-
-// function updateEmptySection(currentSection) {
-//   if (currentSection.children.length === 0) {
-//     emptySection.classList.remove("hidden");
-//   } else {
-//     emptySection.classList.add("hidden");
-//   }
-// }
-
-// const emptySection = getElementById("emptySection");
-// console.log(allSection.children.length);

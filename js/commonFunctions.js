@@ -25,31 +25,15 @@ function activeBtn(id) {
   selected.classList.add("activeBtn");
 
   if (selected == allBtn) {
-    sectionJobCount.innerText = updateCount();
-    if (allSection.children.length < 1) {
-      emptySection.classList.remove("hidden");
-    } else {
-      emptySection.classList.add("hidden");
-    }
+    updateCount();
   } else if (selected == interviewBtn) {
-    if (interviewSection.children.length < 1) {
-      emptySection.classList.remove("hidden");
-    } else {
-      emptySection.classList.add("hidden");
-    }
+    updateCount();
   } else {
-    if (rejectedSection.children.length < 1) {
-      emptySection.classList.remove("hidden");
-    } else {
-      emptySection.classList.add("hidden");
-    }
+    updateCount();
   }
 }
 
 function activeBtnAndShowOnly(sectionId, btnId) {
   showOnly(sectionId);
   activeBtn(btnId);
-
-  // const currentSection = document.getElementById(sectionId);
-  // updateEmptySection(currentSection);
 }
